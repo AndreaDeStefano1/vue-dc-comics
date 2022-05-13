@@ -11,35 +11,8 @@
           </button>
           <div class="collapse navbar-collapse flex-grow-0 h-100" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 h-100">
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">CHARACTERS</a>
-              </li>
-              <li class="nav-item h-100 ds-active">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">COMICS</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">MOVIES</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">TV</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">GAMES</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">COLLECTIBLES</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">VIDEOS</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">FANS</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">NEWS</a>
-              </li>
-              <li class="nav-item h-100 ">
-                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" href="#">SHOP</a>
+              <li class="nav-item h-100 " :class="{'ds-active' : link.isActive}" v-for="(link,index) in arrayHeaderLink" :key="`header-${index}`">
+                <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" :href="link.href">{{link.textLink}}</a>
               </li>
             </ul>
           </div>
@@ -52,6 +25,67 @@
 <script>
 export default {
   name: 'HeaderComp',
+  data(){
+    return {      
+      arrayHeaderLink:[
+        {
+          href: '#',
+          textLink: 'CHARACTERS',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'COMICS',
+          isActive: true
+        },
+        {
+          href: '#',
+          textLink: 'TV',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'MOVIES',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'TV',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'GAMES',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'COLLECTIBLES',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'VIDEOS',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'FANS',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'NEWS',
+          isActive: false
+        },
+        {
+          href: '#',
+          textLink: 'SHOP',
+          isActive: false
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -72,9 +106,12 @@ export default {
   }
   a{
     border-bottom: 4px solid transparent;
+    cursor: pointer;
   }
-  li.ds-active > a {
-    color: $primary-color !important;
+  li.ds-active > a,
+  li > a:hover {
+    color: $primary-color;
     border-bottom: 4px solid $primary-color;
+   
   }
 </style>

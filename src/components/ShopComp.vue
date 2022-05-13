@@ -1,58 +1,40 @@
 <template>
   <div class="background-primary-light">
-    <div class="container py-5">
+    <div class="container py-5 z-index">
 
-      <ul class="d-flex align-items-center justify-content-between">
+      <ul class="d-flex align-items-center p-0 justify-content-between">
 
-        <li>
-          <div class="image">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-          </div>
-          <div class="category-name">
-            <a href="#">Digital Comics</a> 
-          </div>
+        <li class="d-flex align-items-center">
+          <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+          <a href="#">DIGITAL COMICS</a>
         </li>
 
-        <li>
-          <div class="image">
-            <img src="../assets/img/buy-comics-merchandise.png" alt="">
-          </div>
-          <div class="category-name">
-            <a href="#">DC MERCHANDISE</a> 
-          </div>
+        <li class="d-flex align-items-center">       
+          <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          <a href="#">DC MERCHANDISE</a> 
         </li>
 
-        <li>
-          <div class="image">
+        <li class="d-flex align-items-center">
             <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-          </div>
-          <div class="category-name">
             <a href="#">SUBSCRIPTION</a> 
-          </div>
         </li>
 
-        <li>
-          <div class="image">
-            <img class="shop-locator" src="../assets/img/buy-comics-shop-locator.png" alt="">
-          </div>
-          <div class="category-name">
-            <a href="#">COMIC SHOP LOCATOR</a> 
-          </div>
+        <li class="d-flex align-items-center">
+          <img class="shop-locator" src="../assets/img/buy-comics-shop-locator.png" alt="">
+          <a href="#">COMIC SHOP LOCATOR</a> 
         </li>
 
-        <li>
-          <div class="image">
-            <!-- Non funziona-->
-            <img src="../assets/img/buy-dc-power-visa.svg" alt=""> 
-          </div>
-          <div class="category-name">
-            <a href="#">DC POWER VISA</a> 
-          </div>
+        <li class="d-flex align-items-center"> 
+          <img src="../assets/img/buy-dc-power-visa.svg" alt=""> 
+          <a href="#">DC POWER VISA</a> 
         </li>
+        
         
       </ul>
     
     </div>
+
+   
   </div>
 </template>
 
@@ -68,22 +50,23 @@ export default {
 
   .background-primary-light{
     background-color: lighten($primary-color, 10%);
+    
   }
   ul{
     list-style: none;
   }
-  li > div{
-    display: inline-block;
-  }
+
   img{
     transform: scale(0.5);
 
     
   }
-
-  li a{
-    color: white;
-    text-decoration: none;
+  li{
+    a{
+      color: white;
+      text-decoration: none;
+      white-space: nowrap
+    }
   }
 
 </style>

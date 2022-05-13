@@ -19,6 +19,6 @@ export default {
 .bg-color-black{
   background-color: #1c1c1c;
   margin-top: 2px;
-  min-height: 150px;
+  min-height: 500px;
 }
 </style>

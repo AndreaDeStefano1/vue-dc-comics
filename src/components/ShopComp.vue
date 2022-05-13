@@ -4,51 +4,52 @@
 
       <ul class="d-flex align-items-center justify-content-between">
 
-       <li>
-        <div class="image">
-          <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-        </div>
-        <div class="category-name">
-          <a href="#">Digital Comics</a> 
-        </div>
-      </li>
+        <li>
+          <div class="image">
+            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+          </div>
+          <div class="category-name">
+            <a href="#">Digital Comics</a> 
+          </div>
+        </li>
 
-      <li>
-        <div class="image">
-          <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        </div>
-        <div class="category-name">
-          <a href="#">DC MERCHANDISE</a> 
-        </div>
-      </li>
+        <li>
+          <div class="image">
+            <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          </div>
+          <div class="category-name">
+            <a href="#">DC MERCHANDISE</a> 
+          </div>
+        </li>
 
-      <li>
-        <div class="image">
-          <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-        </div>
-        <div class="category-name">
-          <a href="#">SUBSCRIPTION</a> 
-        </div>
-      </li>
+        <li>
+          <div class="image">
+            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+          </div>
+          <div class="category-name">
+            <a href="#">SUBSCRIPTION</a> 
+          </div>
+        </li>
 
-      <li>
-        <div class="image">
-          <img class="shop-locator" src="../assets/img/buy-comics-shop-locator.png" alt="">
-        </div>
-        <div class="category-name">
-          <a href="#">COMIC SHOP LOCATOR</a> 
-        </div>
-      </li>
+        <li>
+          <div class="image">
+            <img class="shop-locator" src="../assets/img/buy-comics-shop-locator.png" alt="">
+          </div>
+          <div class="category-name">
+            <a href="#">COMIC SHOP LOCATOR</a> 
+          </div>
+        </li>
 
-      <li>
-        <div class="image">
-          <!-- Non funziona-->
-          <img src="../assets/img/buy-dc-power-visa.svg" alt=""> 
-        </div>
-        <div class="category-name">
-          <a href="#">DC POWER VISA</a> 
-        </div>
-      </li>
+        <li>
+          <div class="image">
+            <!-- Non funziona-->
+            <img src="../assets/img/buy-dc-power-visa.svg" alt=""> 
+          </div>
+          <div class="category-name">
+            <a href="#">DC POWER VISA</a> 
+          </div>
+        </li>
+        
       </ul>
     
     </div>

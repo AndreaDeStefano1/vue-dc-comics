@@ -1,46 +1,57 @@
 <template>
+
   <div class="background-primary-light">
+
     <div class="container py-5 z-index">
 
       <ul class="d-flex align-items-center p-0 justify-content-between">
-
-        <li class="d-flex align-items-center">
-          <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">DIGITAL COMICS</a>
+        <li v-for="(item,index) in ImageArr" :key="index" class="d-flex align-items-center"> 
+          <img :src="require(`@/assets/img/${item.url}.${item.extension}`)" alt=""> 
+          <a href="#">{{item.linkTitle}}</a> 
         </li>
-
-        <li class="d-flex align-items-center">       
-          <img src="../assets/img/buy-comics-merchandise.png" alt="">
-          <a href="#">DC MERCHANDISE</a> 
-        </li>
-
-        <li class="d-flex align-items-center">
-            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-            <a href="#">SUBSCRIPTION</a> 
-        </li>
-
-        <li class="d-flex align-items-center">
-          <img class="shop-locator" src="../assets/img/buy-comics-shop-locator.png" alt="">
-          <a href="#">COMIC SHOP LOCATOR</a> 
-        </li>
-
-        <li class="d-flex align-items-center"> 
-          <img src="../assets/img/buy-dc-power-visa.svg" alt=""> 
-          <a href="#">DC POWER VISA</a> 
-        </li>
-        
-        
       </ul>
     
     </div>
 
    
   </div>
+
 </template>
 
 <script>
 export default {
-  name: 'ShopComp'
+  name: 'ShopComp',
+  data(){
+    return{
+      ImageArr: [
+        {
+         linkTitle: 'DIGITAL COMICS',
+          url: 'buy-comics-digital-comics',
+          extension: 'png' 
+        },
+        {
+         linkTitle: 'DC MERCHANDISE',
+          url: 'buy-comics-merchandise',
+          extension: 'png' 
+        },
+        {
+         linkTitle: 'SUBSCRIPTION',
+          url: 'buy-comics-subscriptions',
+          extension: 'png' 
+        },
+        {
+         linkTitle: 'COMIC SHOP LOCATO',
+          url: 'buy-comics-shop-locator',
+          extension: 'png' 
+        },
+        {
+          linkTitle: 'DC POWER VISA',
+          url: 'buy-dc-power-visa',
+          extension: 'svg'
+        }
+      ]
+    }
+  }
 }
 </script>
 

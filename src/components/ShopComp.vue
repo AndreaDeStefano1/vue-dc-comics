@@ -40,7 +40,7 @@ export default {
           extension: 'png' 
         },
         {
-         linkTitle: 'COMIC SHOP LOCATO',
+         linkTitle: 'COMIC SHOP LOCATOR',
           url: 'buy-comics-shop-locator',
           extension: 'png' 
         },

@@ -6,7 +6,7 @@
 
       <ul class="d-flex align-items-center p-0 justify-content-between">
         <li v-for="(item,index) in ImageArr" :key="index" class="d-flex align-items-center"> 
-          <img :src="require(`@/assets/img/${item.url}.${item.extension}`)" alt=""> 
+          <img :src="require(`../assets/img/${item.url}.${item.extension}`)" alt=""> 
           <a href="#">{{item.linkTitle}}</a> 
         </li>
       </ul>

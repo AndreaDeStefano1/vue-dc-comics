@@ -9,9 +9,9 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse flex-grow-0 h-100" id="navbarSupportedContent">
+          <div class=" collapse navbar-collapse flex-grow-0 h-100" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 h-100">
-              <li class="nav-item h-100 " :class="{'ds-active' : link.isActive}" v-for="(link,index) in arrayHeaderLink" :key="`header-${index}`">
+              <li class=" nav-item h-100 " :class="{'ds-active' : link.isActive}" v-for="(link,index) in arrayHeaderLink" :key="`header-${index}`">
                 <a class="nav-link-text d-flex align-items-center h-100" aria-current="page" :href="link.href">{{link.textLink}}</a>
               </li>
             </ul>

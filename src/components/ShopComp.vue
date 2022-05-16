@@ -5,15 +5,15 @@
     <div class="container py-5 z-index">
 
       <ul class="d-flex flex-wrap align-items-center p-0 justify-content-between">
-        <li v-for="(item,index) in ImageArr" :key="index" class="d-flex align-items-center"> 
-          <img :src="require(`../assets/img/${item.url}.${item.extension}`)" alt=""> 
-          <a href="#">{{item.linkTitle}}</a> 
+        <li v-for="(item,index) in ImageArr" :key="index" class="d-flex align-items-center">
+          <img :src="require(`../assets/img/${item.url}.${item.extension}`)" alt="">
+          <a href="#">{{item.linkTitle}}</a>
         </li>
       </ul>
-    
+
     </div>
 
-   
+
   </div>
 
 </template>
@@ -27,22 +27,22 @@ export default {
         {
          linkTitle: 'DIGITAL COMICS',
           url: 'buy-comics-digital-comics',
-          extension: 'png' 
+          extension: 'png'
         },
         {
          linkTitle: 'DC MERCHANDISE',
           url: 'buy-comics-merchandise',
-          extension: 'png' 
+          extension: 'png'
         },
         {
          linkTitle: 'SUBSCRIPTION',
           url: 'buy-comics-subscriptions',
-          extension: 'png' 
+          extension: 'png'
         },
         {
          linkTitle: 'COMIC SHOP LOCATOR',
           url: 'buy-comics-shop-locator',
-          extension: 'png' 
+          extension: 'png'
         },
         {
           linkTitle: 'DC POWER VISA',
@@ -50,6 +50,7 @@ export default {
           extension: 'svg'
         }
       ]
+      // buy-dc-power-visa
     }
   }
 }
@@ -61,22 +62,24 @@ export default {
 
   .background-primary-light{
     background-color: lighten($primary-color, 10%);
-    
+
   }
   ul{
     list-style: none;
   }
 
   img{
-    transform: scale(0.5);
+    // transform: scale(0.5);
+    height: 50px;
+    max-width: 65px;
 
-    
+
   }
   li{
     a{
       color: white;
       text-decoration: none;
-      white-space: nowrap
+      // white-space: nowrap
     }
   }
 

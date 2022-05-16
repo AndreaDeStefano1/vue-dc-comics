@@ -107,11 +107,12 @@ export default {
   a{
     border-bottom: 4px solid transparent;
     cursor: pointer;
+    background-color: red;
   }
   li.ds-active > a,
   li > a:hover {
     color: $primary-color;
-    border-bottom: 4px solid $primary-color;
+    border-bottom: 14px solid $primary-color;
    
   }
 </style>
